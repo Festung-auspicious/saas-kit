@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  font-family: "Noto Sans", sans-serif;
+  }
+
+
+/* This code is for scroll animation in landing page */
+@keyframes scrollAnimation {
+    0% {
+      transform: scale(0.8 );
+    }
+20% {
+      transform: scale(1);
+    }
+  }
+  
+  #dummy-dashboard{
+      animation: scrollAnimation linear;
+      animation-timeline: scroll();
+
+  }
+
+  @keyframes pingSmall{50%,to{inset:-1rem;opacity:0}}
+
+  .animate-pingSmall{
+   animation: pingSmall 1.8s cubic-bezier(.6,.6,0,1) infinite;
+  }
+
+  ::-moz-selection { /* Code for Firefox */
+    color: rgb(48, 48, 48);
+    background: #02CC4C;
+  }
+  
+  ::selection {
+    color: rgb(48, 48, 48);
+    background: #02CC4C;
+  }
